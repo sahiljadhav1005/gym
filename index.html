@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('image3.jpg');
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            box-sizing: border-box;
+            font-family: 'Recursive', sans-serif;
+            height: 100px;
+
+        }
+
+        .left {
+
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 35px;
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 35px;
+
+        }
+
+        .mid {
+            display: block;
+            width: 600px;
+            margin: 20px auto;
+            text-align: center;
+
+        }
+
+        .mid a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .mid a:hover {
+            color: red;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            font-size: 25px;
+        }
+
+        .left img {
+            width: 130px;
+            height: 130px;
+        }
+
+        .left div {
+            text-align: center;
+            color: rgb(40, 207, 24);
+            font-size: 20px;
+        }
+
+        .btn  {
+            font-family: 'Recursive', sans-serif;
+            padding: 10px 28px;
+            margin: 15px;
+            background-color: rgb(121, 107, 107);
+            color: white;
+            font-style: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .btn:hover {
+            background-color: rgb(39, 37, 37);
+        }
+
+        .cont {
+            margin: 250px 4px;
+            padding: 17px 10px;
+
+            border-radius: 15px;
+            width: 40%;
+            height: 50%;
+        }
+
+        .inp {
+            padding: 1px;
+            margin: 10px 58px;
+            border-radius: 15px;
+            width: 300px;
+            border: 2px solid white;
+            display: block;
+            text-align: center;
+            font-family: 'Recursive', sans-serif;
+        }
+
+        .inp ::placeholder {
+            color: black;
+        }
+
+        #one {
+            width: 313px;
+            margin: 10px 55px;
+            font-family: 'Recursive', sans-serif;
+        }
+
+        ol {
+
+            margin: 260px -2px;
+            padding: 22px 42px;
+            height: 500px;
+            width: 288px;
+        
+        }
+
+        h1 {
+            padding: 20px 90px;
+            margin: 20px 20 px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+
+            <img src="image1.jpg" alt>
+
+            <div> sahil fitness </div>
+
+        </div>
+
+        <div class="mid">
+
+            <ul class="navbar">
+
+                <li>
+
+                    <a href="#">Home</a>
+
+                </li>
+                <li>
+
+                    <a href="#">About</a>
+
+                </li>
+
+                <li>
+
+                    <a href="#">Services</a>
+
+                </li>
+
+                <li>
+
+                    <a href="#">Contact Us</a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="right">
+
+            <button class="btn">Call us now</button>
+
+            <button class="btn">Email us</button>
+
+        </div>
+
+        <div class="cont">
+
+            <h1>Join best GYM</h1>
+
+            <!-- <form action="noaction.php" class="form"> -->
+              
+                <div class="forminp">
+
+                    <input type="text" class="inp" placeholder="Enter your name">
+                </div>
+
+                <div class="forminp">
+
+                    <input type="email" class="inp" placeholder="Enter your age">
+                </div>
+                <div class="forminp">
+
+                    <input type="integer" class="inp" placeholder="Enter your mobile number">
+
+                </div>
+
+                <div class="forminp"> <input type="text" class="inp" placeholder="Enter your mail">
+
+                </div>
+                <a href="https://google.com" target="_blank">
+                    <button id="one" class="btn">Submit</button>
+                </a>
+            </form>
+
+    </header>
+</body>
+
+</html>
