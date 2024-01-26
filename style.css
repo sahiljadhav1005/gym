@@ -1,0 +1,249 @@
+*
+{
+  text-decoration: none;
+  max-height: 600px;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+    background: url('gymimage.webp') no-repeat center center fixed;
+    margin: 0px;
+    padding: 0px;
+    color: blue;
+    box-sizing: border-box;
+    font-family: 'Recursive', sans-serif;
+    height: auto;
+    width: auto;
+    background-size: cover;
+}
+.sahil
+{
+    button {
+        --glow-color: rgb(217, 176, 255);
+        --glow-spread-color: rgba(191, 123, 255, 0.781);
+        --enhanced-glow-color: rgb(231, 206, 255);
+        --btn-color: rgb(100, 61, 136);
+        border: .25em solid var(--glow-color);
+        padding: 1em 3em;
+        color: var(--glow-color);
+        font-size: 15px;
+        font-weight: bold;
+        background-color: var(--btn-color);
+        border-radius: 1em;
+        outline: none;
+        box-shadow: 0 0 1em .25em var(--glow-color),
+               0 0 4em 1em var(--glow-spread-color),
+               inset 0 0 .75em .25em var(--glow-color);
+        text-shadow: 0 0 .5em var(--glow-color);
+        position: relative;
+        transition: all 0.3s;
+       }
+       
+       button::after {
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        top: 120%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--glow-spread-color);
+        filter: blur(2em);
+        opacity: .7;
+        transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+       }
+/*        
+       button:hover {
+        color: var(--btn-color);
+        background-color: var(--glow-color);
+        box-shadow: 0 0 1em .25em var(--glow-color),
+               0 0 4em 2em var(--glow-spread-color),
+               inset 0 0 .75em .25em var(--glow-color);
+       } */
+       
+       /* button:active {
+        box-shadow: 0 0 0.6em .25em var(--glow-color),
+               0 0 2.5em 2em var(--glow-spread-color),
+               inset 0 0 .5em .25em var(--glow-color);
+       } */
+}
+.left {
+
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+}
+
+.right {
+    display: inline-block;
+    position: absolute;
+    width:300px ;
+    top: 20px;
+    right: 35px;
+
+}
+
+.mid {
+    display: block;
+    width: 600px;
+    margin: 20px auto;
+    text-align: center;
+
+}
+
+.mid a {
+    text-decoration: none;
+    color: white;
+}
+
+.mid a:hover {
+    color: red;
+}
+
+.navbar li {
+    /* === removing default button style ===*/
+.button {
+    margin: 0px;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 1em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+    display: inline-block;
+    margin: 0px;
+    padding: 10px;
+    font-size: 23px;
+}
+
+.left img {
+    width: 200px;
+    height: 160px;
+}
+
+.left div {
+    text-align: center;
+    margin: 10px;
+    color: rgb(40, 207, 24);
+    font-size: 20px;
+}
+
+.btn {
+    display: block;
+    margin: 75px auto;
+    text-align: center;
+    font-size: 1.2rem;
+    
+    padding: 1rem 2.5rem ;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  }
+ 
+  .btn:active {
+    scale: 0.92;
+  }
+
+  .btn:hover {
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+  }
+
+.cont {
+
+    margin: 140px 4px;
+    padding: 100px 70px;
+
+    border-radius: 15px;
+    width: 40%;
+    height: 50%;
+}
+
+.inp {
+    padding: 5px;
+    margin: 10px 58px;
+    border-radius: 15px;
+    width: 300px;
+    border: 2px solid white;
+    display: block;
+    text-align: center;
+    font-family: 'Recursive', sans-serif;
+}
+
+.inp ::placeholder {
+    color: black;
+}
+
+input::placeholder
+{
+    /* Specify the font style properties you want for the placeholder text */
+    font-family: 'Cursive'; 
+    font-size: 16px; /* Set the font size */
+    font-style: italic; /* Set the font style, e.g., italic */
+    color: #999; /* Set the color of the placeholder text */
+}
+
+#one {
+    width: 313px;
+    margin: 15px 55px;
+    font-family: 'Recursive', sans-serif;
+}
+
+ol {
+
+    margin: 260px -2px;
+    padding: 22px 42px;
+    height: 500px;
+    width: 288px;
+
+}
+
+h1 {
+    padding: 20px 75px;
+    margin: 0px 20px;
+    text-align: left;
+}
+
